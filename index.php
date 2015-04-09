@@ -138,7 +138,7 @@ function show_property_info(){
   $result=mysqli_query($conn,$sql);
 
   echo "<table border='0'><tr><th >Owner Name</th><th>Owner Address</th><th>City</th><th>ZIP</th><th>Cellphone</th><th>Email</th></tr>";
-  while ($row = mysqli_fetch_array($result)) {
+  while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 
     echo "<tr><td>".$row['owner_name']."</td>";
     echo "<td>".$row['owner_address']."</td>";
@@ -172,7 +172,7 @@ function show_property_info(){
  $result=mysqli_query($conn,$sql);
 
  echo "<table border='0'><tr><th >Owner Name</th><th>Owner Address</th><th>City</th><th>ZIP</th><th>Cellphone</th><th>Email</th></tr>";
- while ($row = mysqli_fetch_array($result)) {
+ while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 
   echo "<tr><td>".$row['owner_name']."</td>";
   echo "<td>".$row['owner_address']."</td>";
@@ -202,7 +202,7 @@ echo "<input type='button' value='Close' onclick='show_property_info()' />";
   $result=mysqli_query($conn,$sql);
 
   echo "<table border='0'><tr><th >Procel ID</th><th>Property Address</th><th>Units</th><th>Owner</th></tr>";
-  while ($row = mysqli_fetch_array($result)) {
+  while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 
     echo "<tr><td>".$row['pid']."</td>";
     echo "<td>".$row['p_address']."</td>";
