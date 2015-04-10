@@ -36,7 +36,7 @@ $(document).ready(function(){
 
   $("#a_email").click(function(){
 
-    $.get("alert.php",function(){alert("Send email sucessfully");
+    $.get("alert.php",function(data){alert("Status:"+data);
   });
 
 });
