@@ -29,8 +29,8 @@ for($i=0;$i<count($owner_id);$i++){
            $mail=new PHPMailer();
            $mail->IsSMTP();
            $mail->Host = "email-smtp.us-west-2.amazonaws.com";
-           //$mail->Username="AKIAI2MSKPKDBXX577BQ";
-           //$mail->Password="AgimD4vJ/rQCf6TiAELAjxILiPy2cg7eFUegTf0k2NID";
+           $mail->Username="AKIAI2MSKPKDBXX577BQ";
+           $mail->Password="AgimD4vJ/rQCf6TiAELAjxILiPy2cg7eFUegTf0k2NID";
            $mail ->SetFrom('haw65@pitt.edu','Hao Wu');
            $mail->AddAddress($email,$owner_name);
            $mail->Subject ="West Homestead Alert";
