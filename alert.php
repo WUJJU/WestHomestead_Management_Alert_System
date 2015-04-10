@@ -38,9 +38,9 @@ for($i=0;$i<count($owner_id);$i++){
            if(!$mail->Send()){
    echo 'Message was not sent.';
 
-     return 'Mailer error: ' . $mail->ErrorInfo;
+     echo 'Mailer error: ' . $mail->ErrorInfo;
            }else{
-            return 'Message has been sent.';
+            echo 'Message has been sent.';
            }
 
 /**
