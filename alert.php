@@ -25,7 +25,7 @@ for($i=0;$i<count($owner_id);$i++){
            //ECHO $content;
 
 
-            require("./PHPMailer-master/PHPMailerAutoload.php");
+            require("./PHPMailer/PHPMailerAutoload.php");
            $mail=new PHPMailer();
            $mail->IsSMTP();
            $mail->Host = "email-smtp.us-west-2.amazonaws.com";
